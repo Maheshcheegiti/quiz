@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div class="header">
+        <img src="img/favicon.png" alt="Quiz Icon">
+        <h1>Quiz</h1>
+    </div>
+    <div id="container">
+        <div id="card1" class="card-sec">
+            <h1>General Knownledge Quiz..📑</h1>
+            <p>
+                Try to attempt this Quiz.Questions are based general knowledge and Enjoy it..😎👌<br>
+                <b>Rules are :</b> <br>
+                Total 10 Question and 50 marks, each question carries 5 marks, if your answer wrongly -1 mark is
+                deducted. if you not attempted then score will not effected.
+            </p>
+            <h4>
+                If u want to Start the Quiz click on the Start button.
+            </h4>
+            <div class="center">
+                <button type="button" class="btn" onclick="test()">START</button>
+            </div>
+            <h4>&copy;copyright| <a href="https://www.linkedin.com/in/cheegitimahesh/">Mahesh Cheegiti</a> | 2022</h4>
+        </div>
+        <form name="quiz" id="quiz">
+            <div id="1" class="question">
+                <p>1.What country has the highest life expectancy?</p>
+                <p><input id="q1" type="radio" name="q1" value="A">A. India</p>
+                <p><input id="q1" type="radio" name="q1" value="B">B. Hong Kong</p>
+                <p><input id="q1" type="radio" name="q1" value="C">C. China</p>
+                <p><input id="q1" type="radio" name="q1" value="D">D. France</p>
+            </div>
+            <div id="2" class="question">
+                <p>2.Which animal is known as the "Ship of the Desert"?</p>
+                <p><input id="q2" type="radio" name="q2" value="A">A. Lion</p>
+                <p><input id="q2" type="radio" name="q2" value="B">B. Camel</p>
+                <p><input id="q2" type="radio" name="q2" value="C">C. Akhil</p>
+                <p><input id="q2" type="radio" name="q2" value="D">D. Goat</p>
+            </div>
+            <div id="3" class="question">
+                <p>3.How many years are there in one Millenium?</p>
+                <p><input id="q3" type="radio" name="q3" value="A">A. 1,000 years</p>
+                <p><input id="q3" type="radio" name="q3" value="B">B. 2,000 years</p>
+                <p><input id="q3" type="radio" name="q3" value="C">C. 3,000 years</p>
+                <p><input id="q3" type="radio" name="q3" value="D">D. 4,000 years</p>
+            </div>
+            <div id="4" class="question">
+                <p>4.Name the first man to walk on the Moon?</p>
+                <p><input id="q4" type="radio" name="q4" value="A">A. Mahesh</p>
+                <p><input id="q4" type="radio" name="q4" value="B">B. Neil Armstrong</p>
+                <p><input id="q4" type="radio" name="q4" value="C">C. Asha Bibi</p>
+                <p><input id="q4" type="radio" name="q4" value="D">D. Dinesh</p>
+            </div>
+            <div id="5" class="question">
+                <p>5.What type of gas is absorbed by plants?</p>
+                <p><input id="q5" type="radio" name="q5" value="A">A. CO <sub>2</sub></p>
+                <p><input id="q5" type="radio" name="q5" value="B">B. 0 <sub>2</sub></p>
+                <p><input id="q5" type="radio" name="q5" value="C">C. NO <sub>2</sub></p>
+                <p><input id="q5" type="radio" name="q5" value="D">D. CH <sub>3</sub></p>
+            </div>
+            <div id="6" class="question">
+                <p>6.How many days a February month have in the leap year?</p>
+                <p><input id="q6" type="radio" name="q6" value="A">A. 28</p>
+                <p><input id="q6" type="radio" name="q6" value="B">B. 29</p>
+                <p><input id="q6" type="radio" name="q6" value="C">C. 30</p>
+                <p><input id="q6" type="radio" name="q6" value="D">D. 31</p>
+            </div>
+            <div id="7" class="question">
+                <p>7.Name the planet nearest to the Earth?</p>
+                <p><input id="q7" type="radio" name="q7" value="A">A. Mercury</p>
+                <p><input id="q7" type="radio" name="q7" value="B">B. Saturn</p>
+                <p><input id="q7" type="radio" name="q7" value="C">C. Jupiter</p>
+                <p><input id="q7" type="radio" name="q7" value="D">D. Mars</p>
+            </div>
+            <div id="8" class="question">
+                <p>8.Which continent is known as the 'Dark' continent?</p>
+                <p><input id="q8" type="radio" name="q8" value="A">A. Africa</p>
+                <p><input id="q8" type="radio" name="q8" value="B">B. Australia</p>
+                <p><input id="q8" type="radio" name="q8" value="C">C. Europe</p>
+                <p><input id="q8" type="radio" name="q8" value="D">D. Asia</p>
+            </div>
+            <div id="9" class="question">
+                <p>9.Name the largest 'Democracy' of the world?</p>
+                <p><input id="q9" type="radio" name="q9" value="A">A. France</p>
+                <p><input id="q9" type="radio" name="q9" value="B">B. Italy</p>
+                <p><input id="q9" type="radio" name="q9" value="C">C. China</p>
+                <p><input id="q9" type="radio" name="q9" value="D">D. India</p>
+            </div>
+            <div id="10" class="question">
+                <p>10.Name the hardest substance available on Earth?</p>
+                <p><input id="q10" type="radio" name="q10" value="A">A. Coal</p>
+                <p><input id="q10" type="radio" name="q10" value="B">B. Iron</p>
+                <p><input id="q10" type="radio" name="q10" value="C">C. Vibranium</p>
+                <p><input id="q10" type="radio" name="q10" value="D">D. Daimond</p>
+            </div>
+            <div id="firbtn" class="center">
+                <button type="button" class="btn" onclick="check()">SUBMIT</button>
+            </div>
+        </form>
+        <div id="navcontainer">
+            <div id="nav" class="card-sec">
+                <h1>Question Navigation Bar</h1>
+                <p><b>Attempted:</b><span id="green"> Green</span><b> Visited:</b><span id="purple"> Purple</span><br>
+                    <b>Rules are :</b> Total 10 Question and 50 marks, each question carries 5 marks, if your answer wrongly -1 mark is
+                    deducted. if you not attempted then score will not effected.</p>
+                <div class="rows">
+                    <a href="#1" onclick="box1.style.backgroundColor='rgb(193, 66, 193)';box1.style.color='#fff'">
+                        <div class="box" id="box1">1</div>
+                    </a>
+                    <a href="#2" onclick="box2.style.backgroundColor='rgb(193, 66, 193)';box2.style.color='#fff'">
+                        <div class="box" id="box2">2</div>
+                    </a>
+                    <a href="#3" onclick="box3.style.backgroundColor='rgb(193, 66, 193)';box3.style.color='#fff'">
+                        <div class="box" id="box3">3</div>
+                    </a>
+                    <a href="#4" onclick="box4.style.backgroundColor='rgb(193, 66, 193)';box4.style.color='#fff'">
+                        <div class="box" id="box4">4</div>
+                    </a>
+                </div>
+                <div class="rows">
+                    <a href="#5" onclick="box5.style.backgroundColor='rgb(193, 66, 193)';box5.style.color='#fff'">
+                        <div class="box" id="box5">5</div>
+                    </a>
+                    <a href="#6" onclick="box6.style.backgroundColor='rgb(193, 66, 193)';box6.style.color='#fff'">
+                        <div class="box" id="box6">6</div>
+                    </a>
+                    <a href="#7" onclick="box7.style.backgroundColor='rgb(193, 66, 193)';box7.style.color='#fff'">
+                        <div class="box" id="box7">7</div>
+                    </a>
+                    <a href="#8" onclick="box8.style.backgroundColor='rgb(193, 66, 193)';box8.style.color='#fff'">
+                        <div class="box" id="box8">8</div>
+                    </a>
+                </div>
+                <div class="rows">
+                    <a href="#9" onclick="box9.style.backgroundColor='rgb(193, 66, 193)';box9.style.color='#fff'">
+                        <div class="box" id="box9">9</div>
+                    </a>
+                    <a href="#10" onclick="box10.style.backgroundColor='rgb(193, 66, 193)';box10.style.color='#fff'">
+                        <div class="box" id="box10">10</div>
+                    </a>
+                </div>
+                <h4>After completion click on the sumbit button to check your score</h4>
+            </div>
+            <div id="secbtn" class="center">
+                <button type="button" class="btn" onclick="check()">SUBMIT</button>
+            </div>
+        </div>
+        <div id="card" class="card-sec">
+            <h1 id="result"></h1>
+            <p>
+                Thank u for your participation in this Quiz.We hope you enjoyed a lot!!..
+            </p>
+            <h4>
+                If u want to take tast again.
+                <a href="index.html">Click here!</a>
+            </h4>
+            <h4>&copy;copyright| <a href="https://www.linkedin.com/in/cheegitimahesh/">Mahesh Cheegiti</a> | 2022</h4>
+        </div>
+    </div>
+    <script src="confetti.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

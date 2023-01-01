@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Fira+Sans:wght@500&family=Montserrat:wght@100;300;400;500;600;700&family=Mulish:wght@300;400&family=Supermercado+One&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+  }
+/* Header */
+.header{
+    height: 10vh;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg,rgb(48, 5, 48),rgb(175, 29, 175));
+    line-height: 9vh;
+    font-size: 30px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+    position: sticky;
+    width: 100%;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* body */
+html,body {
+  width: 100%;
+  height: 100%;
+  background-color: #9b9898;
+}
+input[type="radio"] {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+  transform: scale(1.2);
+  margin-right: 10px;
+  accent-color: rgb(48, 5, 48);
+}
+#container{
+  font-size: 20px;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  /* overflow: auto; */
+}
+#container p{
+  margin: 10px;
+}
+.question{
+  background: linear-gradient(50deg,rgb(18, 127, 146),rgb(188, 230, 230));
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+  background: linear-gradient(50deg,rgb(18, 127, 146),rgb(188, 230, 230));
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 5px grey ;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(45deg,rgb(48, 5, 48),rgb(175, 29, 175));
+  border-radius: 100px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(135deg,rgb(48, 5, 48),rgb(175, 29, 175));
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* buttons */
+.btn{
+    background-color:rgb(48, 5, 48);
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    height: 10%;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 3px solid rgb(160, 39, 160);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+.btn:hover{
+    background-color:rgb(18, 127, 146);
+    border: 3px solid rgb(47, 173, 196);
+    transition: 0.5s;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
+}
+.center{
+    text-align: center;
+}
+#firbtn{
+  display: none;
+}
+#secbtn{
+  /* display: none; */
+  position: sticky;
+  top: 30px;
+}
+
+/* card section */
+#result{
+    display: none;
+    text-align: center;
+}
+.card-sec {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.card-sec p {
+  font-size: 20px;
+  color: rgb(104, 104, 104);
+  text-align: center;
+}
+
+.card-sec h4 {
+  font-size: 15px;
+  color: #9a9a9a;
+  font-weight: lighter;
+  text-align: center;
+  margin: 10px 0px ;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(89, 89, 209);
+}
+.card-sec h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(89, 89, 209);
+  margin-bottom: 20px;
+}
+
+.box{
+  height: 3em;
+  width: 3em;
+  background-color: rgb(188, 230, 230);
+  text-align: center;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+.box:hover{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgb(18, 127, 146);
+  color: aliceblue;
+}
+.rows{
+  display: flex;
+}
+
+/* none section */
+#card{
+  display: none;
+}
+#quiz{
+  display: none;
+  float: left;
+  width: 63vw;
+  overflow: auto;
+}
+#navcontainer{
+  display: none;
+  position: sticky;
+  top: 20px;
+}
+#nav{
+  /* display: none; */
+  /* float: right; */
+  width: 37vw;
+  margin: 20px;
+  height: fit-content;
+}
+#nav h1{
+  margin: 3px;
+}
+#green{
+  color: rgb(93, 204, 93);
+}
+#purple{
+  color: rgb(193, 66, 193);
+}
+/* #card1{
+  display: none;
+} */
