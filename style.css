@@ -194,16 +194,15 @@ a {
   /* float: right; */
   width: 37vw;
   margin: 20px;
-  height: fit-content;
+  /* height: fit-content; */
+  align-items: center;
+  height: 70vh;
 }
 #nav h1{
   margin: 3px;
 }
 #green{
   color: rgb(93, 204, 93);
-}
-#purple{
-  color: rgb(193, 66, 193);
 }
 /* #card1{
   display: none;
